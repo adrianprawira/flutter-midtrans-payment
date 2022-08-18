@@ -18,7 +18,7 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "http://dl.bintray.com/pt-midtrans/maven" }
+        // maven { url "http://dl.bintray.com/pt-midtrans/maven" }
         maven { url "https://jitpack.io" }
     }
 }
@@ -27,7 +27,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -40,9 +40,9 @@ android {
     }
     dependencies {
         if(rootProject.midtrans_environment == "production") {
-            implementation 'com.midtrans:uikit:1.26.0'
+            implementation 'com.midtrans:uikit:1.30.0'
         } else {
-            implementation 'com.midtrans:uikit:1.26.0-SANDBOX'
+            implementation 'com.midtrans:uikit:1.30.0-SANDBOX'
         }
     }
 }
