@@ -1,6 +1,6 @@
 name: flutter_midtrans_payment
 description: A new flutter plugin project.
-version: 0.2.1
+version: 0.3.1
 homepage: https://github.com/knax/flutter-midtrans-payment
 
 environment:
